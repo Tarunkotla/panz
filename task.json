@@ -3,7 +3,7 @@
        { 
           
           "essential": true,
-          "image": "971076122335.dkr.ecr.ap-south-1.amazonaws.com/sample:SAMPLE-PROJECT-buildNumber",
+          "image": "546272768196.dkr.ecr.ap-south-1.amazonaws.com/sample:SAMPLE-PROJECT-buildNumber",
           "logConfiguration": { 
              "logDriver": "awslogs",
              "options": { 
@@ -24,7 +24,7 @@
     ],
     "networkMode": "awsvpc",
     "cpu": "256",
-    "executionRoleArn": "arn:aws:iam::971076122335:role/ecstasknewman",
+    "executionRoleArn": "arn:aws:iam::546272768196:role/ecstasknewman",
     "family": "anuj-new",
     "memory": "1024",
     "requiresCompatibilities": [ 
