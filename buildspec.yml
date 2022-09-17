@@ -20,6 +20,7 @@ phases:
       - docker push $REPOSITORY_URI:demo-app-${CODEBUILD_BUILD_NUMBER}
       - echo writing image definitions file...
       - printf '[{"name":"demo","imageUri":"%s"}]' $REPOSITORY_URI:demo-app-${CODEBUILD_BUILD_NUMBER} > imagedefinitions.json
+      - printf '[{"name":"demo","imageUri":"image_URI"}]' > imagedefinitions.json
       - cat imagedefinitions.json 
       - pwd
 artifacts:
